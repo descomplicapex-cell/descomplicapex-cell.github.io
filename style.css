@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #f8f5ff 0%, #f3e8ff 40%, #ffe0f0 100%);
+    color: #2d004d;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Fundo decorativo */
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255, 214, 10, 0.25), transparent 70%);
+    filter: blur(80px);
+    z-index: -1;
+}
+
+body::before {
+    top: -80px;
+    left: -80px;
+}
+
+body::after {
+    bottom: -80px;
+    right: -80px;
+}
+
+/* Header */
+.cabecalho {
+    background: linear-gradient(135deg, #2d004d, #7b2cbf, #c77dff);
+    padding: 40px 20px 80px;
+    text-align: center;
+    color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.logo {
+    max-width: 350px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: #ffd60a;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Seções */
+.container {
+    padding: 100px 20px;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #7b2cbf;
+}
+
+.container p {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Galeria */
+.galeria {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* Produtos */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(15px);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(123, 44, 191, 0.15);
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Marcas */
+.marcas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.marca {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(123, 44, 191, 0.12);
+}
+
+
+.marca {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #2d004d;
+    box-shadow: 0 8px 20px rgba(123, 44, 191, 0.12);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.marca:hover {
+    background-color: #ffd60a;
+    color: #2d004d;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Fundo especial para seções destacadas */
+#marcas,
+#proprietaria {
+    background: linear-gradient(135deg, #f3e8ff, #e0c3fc);
+    border-radius: 30px;
+    padding: 100px 30px;
+    margin: 80px auto;
+    max-width: 1100px;
+    box-shadow: 0 20px 50px rgba(123, 44, 191, 0.15);
+}
+
+/* Rodapé */
+.rodape {
+    background: linear-gradient(135deg, #2d004d, #7b2cbf);
+    color: #ffd60a;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+/* RESPONSIVIDADE EXTRA */
+@media (max-width: 768px) {
+    .container {
+        padding: 70px 20px;
+    }
+
+    .cabecalho {
+        padding: 30px 20px 60px;
+    }
+
+    .container h2 {
+        font-size: 1.6rem;
+    }
+
+    .card img {
+        height: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        max-width: 250px;
+    }
+
+    .container {
+        padding: 60px 15px;
+    }
+}
+
+
