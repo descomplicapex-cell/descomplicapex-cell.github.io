@@ -179,7 +179,7 @@ nav a:hover,
 }
 
 .marca {
-    background: linear-gradient(135deg, #ff69b4, #ff1493, #da70d6, #c77dff);
+    background: linear-gradient(135deg, #da70d6, #c77dff, #b19cd9, #7b2cbf);
     padding: 15px 30px;
     border-radius: 50px;
     font-weight: 600;
@@ -190,7 +190,7 @@ nav a:hover,
 }
 
 .marca:hover {
-    background: linear-gradient(135deg, #ff1493, #da70d6, #c77dff, #7b2cbf);
+    background: linear-gradient(135deg, #c77dff, #b19cd9, #7b2cbf, #5a189a);
     color: white;
     transform: translateY(-5px) scale(1.05);
     box-shadow: 0 12px 30px rgba(199, 125, 255, 0.3);
