@@ -179,30 +179,21 @@ nav a:hover,
 }
 
 .marca {
-    background: rgba(255, 255, 255, 0.7);
+    background: linear-gradient(135deg, #ff69b4, #ff1493, #da70d6, #c77dff);
     padding: 15px 30px;
     border-radius: 50px;
     font-weight: 600;
-    box-shadow: 0 8px 20px rgba(123, 44, 191, 0.12);
-}
-
-
-.marca {
-    background: rgba(255, 255, 255, 0.7);
-    padding: 15px 30px;
-    border-radius: 50px;
-    font-weight: 600;
-    color: #2d004d;
+    color: white;
     box-shadow: 0 8px 20px rgba(123, 44, 191, 0.12);
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .marca:hover {
-    background-color: #ffd60a;
-    color: #2d004d;
+    background: linear-gradient(135deg, #ff1493, #da70d6, #c77dff, #7b2cbf);
+    color: white;
     transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 12px 30px rgba(199, 125, 255, 0.3);
 }
 
 /* Fundo especial para seções destacadas */
