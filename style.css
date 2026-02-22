@@ -50,6 +50,16 @@ body::after {
     margin-bottom: 30px;
 }
 
+/* Ícone de localização */
+.localizacao-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: block;
+    color: #7b2cbf;
+    stroke: #7b2cbf;
+}
+
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -143,7 +153,7 @@ nav a:hover,
 /* Produtos */
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 40px;
 }
@@ -292,6 +302,10 @@ nav a:hover,
         height: 160px;
     }
     
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
     .galeria {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -300,11 +314,17 @@ nav a:hover,
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
+    
+    .localizacao-icon {
+        width: 70px;
+        height: 70px;
+    }
 }
 
 @media (max-width: 480px) {
     .header-content {
         position: relative;
+        padding-top: 50px;
     }
 
     .menu-toggle {
@@ -315,10 +335,15 @@ nav a:hover,
         z-index: 1000;
     }
 
+    .logo {
+        max-width: 280px;
+        margin-bottom: 40px;
+    }
+
     .nav-menu {
         display: none;
         position: absolute;
-        top: 80px;
+        top: 100%;
         left: 0;
         right: 0;
         flex-direction: column;
@@ -340,12 +365,13 @@ nav a:hover,
         text-align: left;
     }
 
-    .logo {
-        max-width: 250px;
-    }
-
     .container {
         padding: 60px 15px;
+    }
+    
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
     
     .galeria {
@@ -366,6 +392,11 @@ nav a:hover,
     .rodape-content {
         grid-template-columns: 1fr;
         gap: 30px;
+    }
+    
+    .localizacao-icon {
+        width: 60px;
+        height: 60px;
     }
 }
 
