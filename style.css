@@ -50,21 +50,54 @@ body::after {
     margin-bottom: 25px;
 }
 
-nav {
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    gap: 6px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #ffd60a;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+nav,
+.nav-menu {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
 }
 
-nav a {
+nav a,
+.nav-menu a {
     color: #ffd60a;
     text-decoration: none;
     font-weight: 500;
     transition: 0.3s;
 }
 
-nav a:hover {
+nav a:hover,
+.nav-menu a:hover {
     color: white;
 }
 
@@ -212,9 +245,41 @@ nav a:hover {
 }
 
 @media (max-width: 480px) {
-    nav {
+    .header-content {
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 1000;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
         flex-direction: column;
+        background: linear-gradient(135deg, #2d004d, #7b2cbf, #c77dff);
+        padding: 20px;
         gap: 10px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu a {
+        padding: 12px 20px;
+        display: block;
+        text-align: left;
     }
 
     .logo {
