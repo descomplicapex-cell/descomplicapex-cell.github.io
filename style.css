@@ -156,10 +156,16 @@ body::after {
     text-align: center;
     color: white;
     margin-top: 50px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 .header-content {
     position: relative;
+    width: 100%;
 }
 
 .logo {
@@ -459,6 +465,8 @@ nav a:hover {
 
     .cabecalho {
         margin-top: 0;
+        min-height: auto;
+        display: block;
     }
 
     .container {
