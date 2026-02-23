@@ -84,8 +84,6 @@ body::after {
     padding: 80px 20px 60px;
     text-align: center;
     color: white;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
     margin-top: 50px;
 }
 
