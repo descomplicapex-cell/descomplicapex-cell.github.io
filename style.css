@@ -467,14 +467,11 @@ nav a:hover {
         margin-top: 0;
         min-height: auto;
         display: block;
+        padding: 80px 20px 80px;
     }
 
     .container {
         padding: 70px 20px;
-    }
-
-    .cabecalho {
-        padding: 30px 20px 60px;
     }
 
     .container h2 {
