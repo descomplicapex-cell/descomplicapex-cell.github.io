@@ -521,7 +521,7 @@ nav a:hover {
         display: flex;
         position: absolute;
         right: 20px;
-        top: 20px;
+        top: 5px;
         z-index: 1000;
     }
 
