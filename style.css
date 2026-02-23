@@ -41,7 +41,7 @@ body::after {
     left: 0;
     right: 0;
     background: linear-gradient(135deg, #2d004d, #7b2cbf, #c77dff);
-    padding: 15px 50px;
+    padding: 18px 50px;
     display: flex;
     align-items: center;
     justify-content: center; /* centraliza o bloco de links */
@@ -65,20 +65,48 @@ body::after {
     gap: 20px;
 }
 
+.nav-left a {
+    cursor: default;
+    pointer-events: none;
+}
+
 .nav-logo {
-    max-width: 50px;
+    max-width: 130px;
     height: auto;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 6px;
+    background: rgba(255, 214, 10, 0.15);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-icon svg {
+    width: 20px;
+    height: 20px;
+    stroke: #ffd60a;
+    transition: stroke 0.3s ease;
+}
+
+.social-icon:hover {
+    background: rgba(255, 214, 10, 0.3);
+    transform: translateY(-2px);
+}
+
+.social-icon:hover svg {
+    stroke: white;
 }
 
 .nav-right a {
     color: #ffd60a;
-    font-size: 1.2rem;
     text-decoration: none;
     transition: color 0.3s ease;
-}
-
-.nav-right a:hover {
-    color: white;
 }
 
 .nav-links {
