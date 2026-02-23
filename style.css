@@ -49,6 +49,12 @@ body::after {
     box-shadow: 0 4px 20px rgba(123, 44, 191, 0.2);
 }
 
+.nav-links {
+    display: flex;
+    gap: 50px;
+}
+
+
 .nav-menu a {
     color: #ffd60a;
     text-decoration: none;
@@ -454,6 +460,10 @@ nav a:hover {
         display: flex;
     }
 
+    .nav-links {
+    flex-direction: column;
+    gap: 0;
+}
     .nav-menu a {
         padding: 15px 25px;
         display: block;
