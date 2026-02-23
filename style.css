@@ -68,11 +68,15 @@ body::after {
 .nav-left a {
     cursor: default;
     pointer-events: none;
+    display: flex;
+    align-items: center;
 }
 
 .nav-logo {
     max-width: 130px;
     height: auto;
+    display: block;
+    margin-top: 8px;
 }
 
 .social-icon {
