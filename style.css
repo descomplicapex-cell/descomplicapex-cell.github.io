@@ -107,6 +107,14 @@ body::after {
     display: block;
     color: #7b2cbf;
     stroke: #7b2cbf;
+    filter: drop-shadow(1px 1px 0 #c77dff) drop-shadow(-1px -1px 0 #7b2cbf);
+}
+
+#localizacao h2 {
+    background: linear-gradient(135deg, #7b2cbf, #c77dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .menu-toggle {
