@@ -40,7 +40,7 @@ body::after {
     top: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(135deg, #5a3a7a, #8b4fa0, #8b4fa0);
+    background: linear-gradient(135deg, #2d004d, #7b2cbf, #c77dff);
     padding: 15px 50px;
     display: flex;
     justify-content: center;
@@ -56,6 +56,7 @@ body::after {
     font-size: 0.95rem;
     transition: all 0.3s ease;
     position: relative;
+    letter-spacing: 1px;
 }
 
 .nav-menu a::after {
@@ -65,7 +66,7 @@ body::after {
     left: 0;
     width: 0;
     height: 2px;
-    background: #ffd60a;
+    background: white;
     transition: width 0.3s ease;
 }
 
@@ -252,14 +253,30 @@ nav a:hover {
 }
 
 /* Fundo especial para seções destacadas */
-#marcas,
-#proprietaria {
-    background: linear-gradient(135deg, #f3e8ff, #e0c3fc);
+#marcas {
+    background: linear-gradient(135deg, #f3e8ff 0%, #c77dff 50%, #7b2cbf 100%);
     border-radius: 30px;
     padding: 100px 30px;
     margin: 80px auto;
     max-width: 1100px;
     box-shadow: 0 20px 50px rgba(123, 44, 191, 0.15);
+}
+
+#marcas h2 {
+    color: white;
+}
+
+#proprietaria {
+    background: linear-gradient(135deg, #f3e8ff 0%, #c77dff 50%, #7b2cbf 100%);
+    border-radius: 30px;
+    padding: 100px 30px;
+    margin: 80px auto;
+    max-width: 1100px;
+    box-shadow: 0 20px 50px rgba(123, 44, 191, 0.15);
+}
+
+#proprietaria h2 {
+    color: white;
 }
 
 /* Rodapé */
@@ -396,7 +413,7 @@ nav a:hover {
     }
 
     .logo {
-        max-width: 280px;
+        max-width: 320px;
         margin-bottom: 40px;
     }
 
@@ -407,7 +424,7 @@ nav a:hover {
         right: 10px;
         display: none;
         flex-direction: column;
-        background: linear-gradient(135deg, #5a3a7a, #8b4fa0, #8b4fa0);
+        background: linear-gradient(135deg, #2d004d, #7b2cbf, #c77dff);
         padding: 15px 0;
         gap: 0;
         border-radius: 15px;
@@ -424,10 +441,11 @@ nav a:hover {
         padding: 15px 25px;
         display: block;
         text-align: center;
-        color: white;
+        color: #ffd60a;
         font-weight: 500;
         border-bottom: 1px solid rgba(255, 214, 10, 0.1);
         transition: all 0.3s ease;
+        letter-spacing: 1px;
     }
     
     .nav-menu a:last-child {
@@ -435,8 +453,8 @@ nav a:hover {
     }
     
     .nav-menu a:hover {
-        background: rgba(255, 214, 10, 0.1);
-        color: #ffd60a;
+        background: rgba(255, 214, 10, 0.15);
+        color: white;
     }
     
     .nav-menu a::after {
