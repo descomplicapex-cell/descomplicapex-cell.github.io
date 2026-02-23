@@ -502,6 +502,10 @@ nav a:hover {
         width: 70px;
         height: 70px;
     }
+
+    .logo {
+        max-width: 400px;
+    }
 }
 
 @media (max-width: 480px) {
