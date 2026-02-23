@@ -43,15 +43,48 @@ body::after {
     background: linear-gradient(135deg, #2d004d, #7b2cbf, #c77dff);
     padding: 15px 50px;
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    align-items: center;
+    justify-content: center; /* centraliza o bloco de links */
     z-index: 999;
     box-shadow: 0 4px 20px rgba(123, 44, 191, 0.2);
+    /* gap removed -- spacing handled inside nav-links */
+}
+
+.nav-left {
+    position: absolute;
+    left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-right {
+    position: absolute;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-logo {
+    max-width: 50px;
+    height: auto;
+}
+
+.nav-right a {
+    color: #ffd60a;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-right a:hover {
+    color: white;
 }
 
 .nav-links {
     display: flex;
     gap: 50px;
+    padding: 0 120px; /* espaço interno para garantir distância lateral */
 }
 
 
@@ -382,6 +415,16 @@ nav a:hover {
         box-shadow: 0 4px 20px rgba(123, 44, 191, 0.2);
     }
 
+    /* esconder ícones e logo do menu em telas menores para não interferir */
+    .nav-left,
+    .nav-right {
+        display: none;
+    }
+
+    .nav-links {
+        padding: 0;
+    }
+
     .cabecalho {
         margin-top: 0;
     }
@@ -422,6 +465,12 @@ nav a:hover {
 }
 
 @media (max-width: 480px) {
+    /* garantir que ícones do menu sejam ocultados em mobile completo */
+    .nav-left,
+    .nav-right {
+        display: none;
+    }
+
     .header-content {
         position: relative;
         padding-top: 50px;
