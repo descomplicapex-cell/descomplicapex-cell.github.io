@@ -376,9 +376,8 @@ nav a:hover {
         box-shadow: 0 4px 20px rgba(123, 44, 191, 0.2);
     }
     
-    /* remove extra space above header on smaller screens */
     .cabecalho {
-        margin-top: 0;
+        margin-top: 50px;
     }
     
     .container {
