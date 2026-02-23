@@ -375,11 +375,11 @@ nav a:hover {
         border-radius: 0;
         box-shadow: 0 4px 20px rgba(123, 44, 191, 0.2);
     }
-    
+
     .cabecalho {
-        margin-top: 50px;
+        margin-top: 0;
     }
-    
+
     .container {
         padding: 70px 20px;
     }
@@ -395,20 +395,20 @@ nav a:hover {
     .card img {
         height: 160px;
     }
-    
+
     .cards {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .galeria {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .rodape-content {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
-    
+
     .localizacao-icon {
         width: 70px;
         height: 70px;
@@ -464,16 +464,16 @@ nav a:hover {
         transition: all 0.3s ease;
         letter-spacing: 1px;
     }
-    
+
     .nav-menu a:last-child {
         border-bottom: none;
     }
-    
+
     .nav-menu a:hover {
         background: rgba(255, 214, 10, 0.15);
         color: white;
     }
-    
+
     .nav-menu a::after {
         display: none;
     }
@@ -481,36 +481,34 @@ nav a:hover {
     .container {
         padding: 60px 15px;
     }
-    
+
     .cards {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
-    
+
     .galeria {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .marca {
         transition: all 0.3s ease;
     }
-    
+
     .marca:active {
         background: linear-gradient(135deg, #ffd60a, #f0b90b, #e5ad00, #d9a200) !important;
         color: #2d004d !important;
         transform: translateY(-5px) scale(1.05);
         box-shadow: 0 12px 30px rgba(255, 214, 10, 0.3);
     }
-    
+
     .rodape-content {
         grid-template-columns: 1fr;
         gap: 30px;
     }
-    
+
     .localizacao-icon {
         width: 60px;
         height: 60px;
     }
 }
-
-
