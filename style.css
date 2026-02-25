@@ -161,6 +161,7 @@ body::after {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    border-radius: 0 0 50px 50px;
 }
 
 .header-content {
